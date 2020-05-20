@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content= "Bidushi Banjade">
+<title>CoronaVirus</title>
+<link href="project.css" rel="stylesheet">
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["myFirstName"].value;
+    if (x == "") {
+        alert("Please fill out all the fields marked with an '*'.");
+        return false;
+    }
+}
+</script>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["myLastName"].value;
+    if (x == "") {
+        alert("Please fill out all the fields marked with an '*'.");
+        return false;
+    }
+}
+</script>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["myEmail"].value;
+    if (x == "") {
+        alert("Please fill out all the fields marked with an '*'.");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+
+     <h1>Stay Safe</h1>
+<nav>
+	<ul>
+		<li> <a href="CoronaHome.html"> Home </a> &nbsp; </li>
+		<li> <a href="CoronaPreventive.html"> Preventive measures</a> &nbsp;</li>
+	   <li><a href="CoronaSymptoms.html">Symptoms</a> &nbsp;</li>
+	  <li> <a href="showsymptoms.html"> What to do if you show 	symptoms? </a> &nbsp;</li>
+     <li class = "current"><a href="CoronaSignup.html">Sign Up Here!!</a> &nbsp; </li>
+	<li><a href="CoronaNews.html">News</a> &nbsp; </li>
+	<li><a href="Refrences.html">Refrences</a> &nbsp; </li>
+	</ul>
+</nav>
+<main>
+<div id="wrapper">
+<h2> Sign-Up <br> Receive daily news about Coronavirus.</h2></br>
+<div>
+<form name="myForm" action="/action_page_post.php"
+onsubmit="return validateForm()" method="post">
+<label for="myFirstName">*First Name:</label>
+<input type="text" name="myFirstName" id="myFirstName">
+<label for="myLastName">*Last Name:</label>
+<input type="text" name="myLastName" id="myLastName">
+<label for="myEmail">*E-mail:</label>
+<input type="text" name="myEmail" id="myEmail">
+<input id="mysubmit" type="submit" value="Submit">
+<br>
+	</main>
+<p>OR Visit the Link Below For More Information!<br>
+  <a link href="CoronaNews.html">Click Here</a><p>
+<br>
+</form>
+</div>
+<footer>Copyright &copy;Bidushi Banjade 2020
+<br>
+    <a href="mailto:bbanja3@students.towson.edu">bbanja3@students.towson.edu</a>
+<br>
+This document was last modified on:
+<script type="text/javascript">
+<!--
+document.write(document.lastModified);
+//-->
+</script>
+
+   </footer>
+	</div>
+</body>
+</html>
